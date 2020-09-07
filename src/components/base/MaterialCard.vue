@@ -38,7 +38,7 @@
 
         <div
           v-else-if="title && !icon"
-          class="display-1 font-weight-light"
+          class="display-1"
           v-text="title"
         />
 
@@ -50,7 +50,7 @@
 
         <div
           v-if="text"
-          class="headline font-weight-thin"
+          class="headline font-weight-normal"
           v-text="text"
         />
       </v-sheet>
@@ -68,7 +68,7 @@
       >
         <div
 
-          class="card-title font-weight-light"
+          class="card-title"
           v-text="title"
         />
       </div>
@@ -137,12 +137,12 @@
   .v-card--material
     &__avatar
       position: relative
-      top: -64px
+      // top: -64px
       margin-bottom: -32px
 
     &__heading
       position: relative
-      top: -40px
+      // top: -40px
       transition: .3s ease
       z-index: 1
 </style>

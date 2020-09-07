@@ -24,7 +24,7 @@
     </v-btn>
 
     <v-toolbar-title
-      class="hidden-sm-and-down font-weight-light"
+      class="hidden-sm-and-down"
       v-text="$route.name"
     />
 

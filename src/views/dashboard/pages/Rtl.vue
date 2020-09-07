@@ -35,7 +35,7 @@
               slider-color="white"
             >
               <span
-                class="subheading font-weight-light mx-3"
+                class="subheading mx-3"
                 style="align-self: center"
               >
                 منتصف:

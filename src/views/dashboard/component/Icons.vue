@@ -13,11 +13,11 @@
       <v-col cols="12">
         <base-material-card color="green">
           <template v-slot:heading>
-            <div class="display-2 font-weight-light">
+            <div class="display-2">
               Material Design Icons
             </div>
 
-            <div class="subtitle-1 font-weight-light">
+            <div class="subtitle-1">
               See all available
               <a
                 class="white--text"

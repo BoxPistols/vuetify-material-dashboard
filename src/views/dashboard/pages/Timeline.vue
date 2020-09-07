@@ -30,7 +30,7 @@
               </v-chip>
 
               <p
-                class="subtitle-1 font-weight-light"
+                class="subtitle-1"
                 v-text="timeline.text"
               />
 

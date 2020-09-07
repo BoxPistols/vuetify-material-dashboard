@@ -13,9 +13,9 @@
           :data="emailsSubscriptionChart.data"
           :options="emailsSubscriptionChart.options"
           :responsive-options="emailsSubscriptionChart.responsiveOptions"
-          color="#E91E63"
+          color="#FF8C00"
           hover-reveal
-          type="Bar"
+          type="Line"
         >
           <template v-slot:reveal-actions>
             <v-tooltip bottom>
@@ -26,9 +26,7 @@
                   icon
                   v-on="on"
                 >
-                  <v-icon
-                    color="info"
-                  >
+                  <v-icon color="info">
                     mdi-refresh
                   </v-icon>
                 </v-btn>
@@ -53,12 +51,12 @@
             </v-tooltip>
           </template>
 
-          <h4 class="card-title font-weight-light mt-2 ml-2">
-            Website Views
+          <h4 class="card-title mt-2 ml-2">
+            2019 年間売上推移
           </h4>
 
-          <p class="d-inline-flex font-weight-light ml-2 mt-1">
-            Last Campaign Performance
+          <p class="d-inline-flex ml-2 mt-1">
+            キャンペーン実施：春/秋
           </p>
 
           <template v-slot:actions>
@@ -68,7 +66,7 @@
             >
               mdi-clock-outline
             </v-icon>
-            <span class="caption grey--text font-weight-light">updated 10 minutes ago</span>
+            <span class="caption grey--text">updated 10 minutes ago</span>
           </template>
         </base-material-chart-card>
       </v-col>
@@ -82,7 +80,7 @@
           :options="dailySalesChart.options"
           color="success"
           hover-reveal
-          type="Line"
+          type="Bar"
         >
           <template v-slot:reveal-actions>
             <v-tooltip bottom>
@@ -93,9 +91,7 @@
                   icon
                   v-on="on"
                 >
-                  <v-icon
-                    color="info"
-                  >
+                  <v-icon color="info">
                     mdi-refresh
                   </v-icon>
                 </v-btn>
@@ -120,11 +116,11 @@
             </v-tooltip>
           </template>
 
-          <h4 class="card-title font-weight-light mt-2 ml-2">
-            Daily Sales
+          <h4 class="card-title mt-2 ml-2">
+            年代別の売上傾向
           </h4>
 
-          <p class="d-inline-flex font-weight-light ml-2 mt-1">
+          <p class="d-inline-flex ml-2 mt-1">
             <v-icon
               color="green"
               small
@@ -132,7 +128,7 @@
               mdi-arrow-up
             </v-icon>
             <span class="green--text">55%</span>&nbsp;
-            increase in today's sales
+            昨日の売上数
           </p>
 
           <template v-slot:actions>
@@ -142,7 +138,7 @@
             >
               mdi-clock-outline
             </v-icon>
-            <span class="caption grey--text font-weight-light">updated 4 minutes ago</span>
+            <span class="caption grey--text">updated 4 minutes ago</span>
           </template>
         </base-material-chart-card>
       </v-col>
@@ -167,9 +163,7 @@
                   icon
                   v-on="on"
                 >
-                  <v-icon
-                    color="info"
-                  >
+                  <v-icon color="info">
                     mdi-refresh
                   </v-icon>
                 </v-btn>
@@ -194,11 +188,11 @@
             </v-tooltip>
           </template>
 
-          <h3 class="card-title font-weight-light mt-2 ml-2">
-            Completed Tasks
+          <h3 class="card-title mt-2 ml-2">
+            在庫数の年間推移
           </h3>
 
-          <p class="d-inline-flex font-weight-light ml-2 mt-1">
+          <p class="d-inline-flex ml-2 mt-1">
             Last Last Campaign Performance
           </p>
 
@@ -209,7 +203,7 @@
             >
               mdi-clock-outline
             </v-icon>
-            <span class="caption grey--text font-weight-light">campaign sent 26 minutes ago</span>
+            <span class="caption grey--text">campaign sent 26 minutes ago</span>
           </template>
         </base-material-chart-card>
       </v-col>
@@ -284,11 +278,11 @@
           class="px-5 py-3"
         >
           <template v-slot:heading>
-            <div class="display-2 font-weight-light">
+            <div class="display-2">
               Employees Stats
             </div>
 
-            <div class="subtitle-1 font-weight-light">
+            <div class="subtitle-1">
               New employees on 15th September, 2016
             </div>
           </template>
@@ -313,7 +307,7 @@
               slider-color="white"
             >
               <span
-                class="subheading font-weight-light mx-3"
+                class="subheading mx-3"
                 style="align-self: center"
               >Tasks:</span>
               <v-tab class="mr-3">
@@ -362,7 +356,7 @@
 
                     <v-col cols="9">
                       <div
-                        class="font-weight-light"
+                        class="font-weight-normal"
                         v-text="task.text"
                       />
                     </v-col>
@@ -400,9 +394,9 @@
       return {
         dailySalesChart: {
           data: {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+            labels: ['itemA', 'itemB', 'itemC', 'itemD', 'itemE', 'itemF', 'itemG'],
             series: [
-              [12, 17, 7, 17, 23, 18, 38],
+              [18, 27, 47, 37, 33, 18, 28],
             ],
           },
           options: {
@@ -444,7 +438,7 @@
           data: {
             labels: ['Ja', 'Fe', 'Ma', 'Ap', 'Mai', 'Ju', 'Jul', 'Au', 'Se', 'Oc', 'No', 'De'],
             series: [
-              [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
+              [442, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
 
             ],
           },
@@ -472,116 +466,111 @@
             }],
           ],
         },
-        headers: [
-          {
-            sortable: false,
-            text: 'ID',
-            value: 'id',
-          },
-          {
-            sortable: false,
-            text: 'Name',
-            value: 'name',
-          },
-          {
-            sortable: false,
-            text: 'Salary',
-            value: 'salary',
-            align: 'right',
-          },
-          {
-            sortable: false,
-            text: 'Country',
-            value: 'country',
-            align: 'right',
-          },
-          {
-            sortable: false,
-            text: 'City',
-            value: 'city',
-            align: 'right',
-          },
+        headers: [{
+                    sortable: false,
+                    text: 'ID',
+                    value: 'id',
+                  },
+                  {
+                    sortable: false,
+                    text: 'Name',
+                    value: 'name',
+                  },
+                  {
+                    sortable: false,
+                    text: 'Salary',
+                    value: 'salary',
+                    align: 'right',
+                  },
+                  {
+                    sortable: false,
+                    text: 'Country',
+                    value: 'country',
+                    align: 'right',
+                  },
+                  {
+                    sortable: false,
+                    text: 'City',
+                    value: 'city',
+                    align: 'right',
+                  },
         ],
-        items: [
-          {
-            id: 1,
-            name: 'Dakota Rice',
-            country: 'Niger',
-            city: 'Oud-Tunrhout',
-            salary: '$35,738',
-          },
-          {
-            id: 2,
-            name: 'Minerva Hooper',
-            country: 'Curaçao',
-            city: 'Sinaai-Waas',
-            salary: '$23,738',
-          },
-          {
-            id: 3,
-            name: 'Sage Rodriguez',
-            country: 'Netherlands',
-            city: 'Overland Park',
-            salary: '$56,142',
-          },
-          {
-            id: 4,
-            name: 'Philip Chanley',
-            country: 'Korea, South',
-            city: 'Gloucester',
-            salary: '$38,735',
-          },
-          {
-            id: 5,
-            name: 'Doris Greene',
-            country: 'Malawi',
-            city: 'Feldkirchen in Kārnten',
-            salary: '$63,542',
-          },
+        items: [{
+                  id: 1,
+                  name: 'Dakota Rice',
+                  country: 'Niger',
+                  city: 'Oud-Tunrhout',
+                  salary: '$35,738',
+                },
+                {
+                  id: 2,
+                  name: 'Minerva Hooper',
+                  country: 'Curaçao',
+                  city: 'Sinaai-Waas',
+                  salary: '$23,738',
+                },
+                {
+                  id: 3,
+                  name: 'Sage Rodriguez',
+                  country: 'Netherlands',
+                  city: 'Overland Park',
+                  salary: '$56,142',
+                },
+                {
+                  id: 4,
+                  name: 'Philip Chanley',
+                  country: 'Korea, South',
+                  city: 'Gloucester',
+                  salary: '$38,735',
+                },
+                {
+                  id: 5,
+                  name: 'Doris Greene',
+                  country: 'Malawi',
+                  city: 'Feldkirchen in Kārnten',
+                  salary: '$63,542',
+                },
         ],
         tabs: 0,
         tasks: {
-          0: [
-            {
-              text: 'Sign contract for "What are conference organizers afraid of?"',
-              value: true,
-            },
-            {
-              text: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
-              value: false,
-            },
-            {
-              text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
-              value: false,
-            },
-            {
-              text: 'Create 4 Invisible User Experiences you Never Knew About',
-              value: true,
-            },
+          0: [{
+                text: 'Sign contract for "What are conference organizers afraid of?"',
+                value: true,
+              },
+              {
+                text: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
+                value: false,
+              },
+              {
+                text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
+                value: false,
+              },
+              {
+                text: 'Create 4 Invisible User Experiences you Never Knew About',
+                value: true,
+              },
           ],
-          1: [
-            {
-              text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
-              value: true,
-            },
-            {
-              text: 'Sign contract for "What are conference organizers afraid of?"',
-              value: false,
-            },
+          1: [{
+                text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
+                value: true,
+              },
+              {
+                text: 'Sign contract for "What are conference organizers afraid of?"',
+                value: false,
+              },
           ],
-          2: [
-            {
-              text: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
-              value: false,
-            },
-            {
-              text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
-              value: true,
-            },
-            {
-              text: 'Sign contract for "What are conference organizers afraid of?"',
-              value: true,
-            },
+          2: [{
+                text: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
+                value: false,
+              },
+              {
+                text: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit',
+                value: true,
+              },
+              {
+                text: 'Sign contract for "What are conference organizers afraid of?"',
+                value: true,
+              },
           ],
         },
         list: {

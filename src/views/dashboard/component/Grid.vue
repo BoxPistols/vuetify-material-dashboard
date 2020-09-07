@@ -190,7 +190,7 @@
 
     <v-row>
       <paragraph-heading class="text-center pb-0">
-        <h4 class="font-weight-light">
+        <h4 class="font-weight-normal">
           Paragraphs
         </h4>
       </paragraph-heading>
@@ -205,7 +205,7 @@
               >
                 <paragraph-heading>Some Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.
                 </v-card-text>
               </v-col>
@@ -216,7 +216,7 @@
               >
                 <paragraph-heading>Another Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.
                 </v-card-text>
               </v-col>
@@ -227,7 +227,7 @@
               >
                 <paragraph-heading>Some Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
                 </v-card-text>
               </v-col>
@@ -238,7 +238,7 @@
               >
                 <paragraph-heading>Another Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
                 </v-card-text>
               </v-col>
@@ -249,7 +249,7 @@
               >
                 <paragraph-heading>Another Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
                 </v-card-text>
               </v-col>
@@ -260,7 +260,7 @@
               >
                 <paragraph-heading>Some Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
                 </v-card-text>
               </v-col>
@@ -271,7 +271,7 @@
               >
                 <paragraph-heading>Another Title Here</paragraph-heading>
 
-                <v-card-text class="font-weight-light">
+                <v-card-text class="font-weight-normal">
                   One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
                 </v-card-text>
               </v-col>
@@ -291,7 +291,7 @@
       ParagraphHeading: {
         render (h) {
           return h('div', {
-            class: 'headline font-weight-light col cols-12',
+            class: 'headline col cols-12',
           }, this.$slots.default)
         },
       },

@@ -17,7 +17,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Pick your Color
               </h5>
             </base-subheading>
@@ -41,7 +41,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Buttons with Label
               </h5>
             </base-subheading>
@@ -83,7 +83,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Pick your Size
               </h5>
             </base-subheading>
@@ -106,7 +106,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Pick your Style
               </h5>
             </base-subheading>
@@ -165,7 +165,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Pagination
               </h5>
             </base-subheading>
@@ -192,7 +192,7 @@
             md="6"
           >
             <base-subheading>
-              <h5 class="font-weight-light">
+              <h5 class="font-weight-normal">
                 Button Group
               </h5>
             </base-subheading>
@@ -247,7 +247,7 @@
                 v-if="i === 0"
                 :key="`heading-${i}`"
               >
-                <h5 class="font-weight-light">
+                <h5 class="font-weight-normal">
                   Social buttons
                 </h5>
               </base-subheading>

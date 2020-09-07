@@ -10,12 +10,12 @@
     </div>
 
     <v-card-text
-      class="display-1 font-weight-light font-italic mb-3"
+      class="display-1 font-italic mb-3"
       v-text="blurb"
     />
 
     <div
-      class="display-2 font-weight-light mb-2"
+      class="display-2 mb-2"
       v-text="author"
     />
 

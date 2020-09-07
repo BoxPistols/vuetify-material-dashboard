@@ -11,11 +11,11 @@
       >
         <base-material-card>
           <template v-slot:heading>
-            <div class="display-2 font-weight-light">
+            <div class="display-2">
               Edit Profile
             </div>
 
-            <div class="subtitle-1 font-weight-light">
+            <div class="subtitle-1">
               Complete your profile
             </div>
           </template>
@@ -149,11 +149,11 @@
               CEO / CO-FOUNDER
             </h6>
 
-            <h4 class="display-2 font-weight-light mb-3 black--text">
+            <h4 class="display-2 mb-3 black--text">
               Alec Thompson
             </h4>
 
-            <p class="font-weight-light grey--text">
+            <p class="font-weight-normal grey--text">
               Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
             </p>
 

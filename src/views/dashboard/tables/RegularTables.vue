@@ -1,7 +1,7 @@
 <template>
   <v-container
     id="regular-tables"
-    fluid
+    fluid="fluid"
     tag="section"
   >
     <base-v-component
@@ -103,7 +103,7 @@
 
     <base-material-card
       color="success"
-      dark
+      dark="dark"
       icon="mdi-clipboard-plus"
       title="Table on Dark Background"
       class="px-5 py-3"
@@ -186,3 +186,11 @@
     </base-material-card>
   </v-container>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {}
+    },
+  }
+</script>
