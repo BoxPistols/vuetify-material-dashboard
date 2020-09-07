@@ -76,7 +76,7 @@
       <div />
     </v-list>
 
-    <template v-slot:append>
+    <!-- <template v-slot:append>
       <base-item
         :item="{
           title: $t('upgrade'),
@@ -84,7 +84,7 @@
           to: '/upgrade',
         }"
       />
-    </template>
+    </template> -->
   </v-navigation-drawer>
 </template>
 
@@ -112,14 +112,14 @@
           to: '/',
         },
         {
-          icon: 'mdi-account',
-          title: 'user',
-          to: '/pages/user',
-        },
-        {
           title: 'rtables',
           icon: 'mdi-clipboard-outline',
           to: '/tables/regular-tables',
+        },
+        {
+          icon: 'mdi-account',
+          title: 'user',
+          to: '/pages/user',
         },
         {
           title: 'typography',

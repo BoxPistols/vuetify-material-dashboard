@@ -51,11 +51,11 @@ export default new Router({
           component: () => import('@/views/dashboard/maps/GoogleMaps'),
         },
         // Upgrade
-        {
-          name: 'Upgrade',
-          path: 'upgrade',
-          component: () => import('@/views/dashboard/Upgrade'),
-        },
+        // {
+        //   name: 'Upgrade',
+        //   path: 'upgrade',
+        //   component: () => import('@/views/dashboard/Upgrade'),
+        // },
       ],
     },
   ],
